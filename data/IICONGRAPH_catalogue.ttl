@@ -1,0 +1,158 @@
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit> . 
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix iig-meta: <https://w3id.org/iicongraph/metadata/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix vcard: <http://www.w3.org/TR/vcard-rdf/> .
+
+#Catalogue
+
+iig-meta:iicongraph_catalogue
+	a dcatapit:Catalog , dcat:Catalog ;
+	dct:title "Catalogue of IICONGRAPH"@en ;
+	dct:description "Catalogue containing metadata about IICONGRAPH and its datasets"@en ;
+	dct:modified "2023-08-12"^^xsd:date ;
+	dct:issued "2023-05-12"^^xsd:date ;
+	dct:publisher orcid:0000-0002-9152-4402 ;
+	dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+	dcat:dataset iig-meta:IICONGRAPHglobal ;
+    dcat:dataset iig-meta:IICONGRAPHwikidata ;
+    dcat:dataset iig-meta:IICONGRAPHarco ;
+	foaf:homepage <https://github.com/br0ast/iicongraph> ;
+	dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme> .
+
+
+#Dataset 
+
+iig-meta:IICONGRAPHglobal
+	a dcatapit:Dataset , dcat:Dataset ;
+	dct:identifier <https://doi.org/10.5281/zenodo.10294589> ;
+	dct:title "IICONGRAPHglobal"@en ;
+	dct:description "Dataset containing the re-engineering of ArCo's and Wikidata's iconographical and iconological statements following the structure of the ICON ontology and enriched by an alignment to HyperReal"@en ;
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+	dct:subject <http://eurovoc.europa.eu/100225> , <http://eurovoc.europa.eu/100223> , <http://eurovoc.europa.eu/4096>, <http://eurovoc.europa.eu/2278>; #humanities #informationtechnologyanddataprocessing #visualart
+	dct:issued "2023-12-5"^^xsd:date ;
+	dct:modified "2023-12-8"^^xsd:date ;
+	dcat:keyword "art", "semantic web", "cultural heritage", "knowledge graph";
+	owl:versionInfo "1.0" ; 
+	dct:rightsHolder orcid:0000-0002-9152-4402;
+	dct:publisher orcid:0000-0002-9152-4402 ;
+	dct:creator orcid:0000-0002-9152-4402 ;
+	dct:license <http://creativecommons.org/licenses/by/4.0> ;
+	prov:wasDerivedFrom <> ;
+	prov:wasDerivedFrom <> ;
+    prov:wasDerivedFrom <> ;
+	dcat:distribution iig-meta:IICONGRAPHglobalTTLdistribution ;
+	dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+	dcat:contactPoint iig-meta:IICONGRAPHcontactpoint ;
+	dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+	dct:temporal "no limitations" ;
+	dct:spatial "global" .
+	
+iig-meta:IICONGRAPHwikidata
+	a dcatapit:Dataset , dcat:Dataset ;
+	dct:identifier <https://doi.org/10.5281/zenodo.10294589> ;
+	dct:title "IICONGRAPHglobal"@en ;
+	dct:description "Dataset containing the re-engineering of Wikidata's iconographical and iconological statements following the structure of the ICON ontology and enriched by an alignment to HyperReal"@en ;
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+	dct:subject <http://eurovoc.europa.eu/100225> , <http://eurovoc.europa.eu/100223> , <http://eurovoc.europa.eu/4096>, <http://eurovoc.europa.eu/2278>; #humanities #informationtechnologyanddataprocessing #visualart
+	dct:issued "2023-12-5"^^xsd:date ;
+	dct:modified "2023-12-8"^^xsd:date ;
+	dcat:keyword "art", "semantic web", "cultural heritage", "knowledge graph";
+	owl:versionInfo "1.0" ; 
+	dct:rightsHolder orcid:0000-0002-9152-4402;
+	dct:publisher orcid:0000-0002-9152-4402 ;
+	dct:creator orcid:0000-0002-9152-4402 ;
+	dct:license <http://creativecommons.org/licenses/by/4.0> ;
+	prov:wasDerivedFrom <> ;
+    prov:wasDerivedFrom <> ;
+	dcat:distribution iig-meta:IICONGRAPHwikidataTTLdistribution ;
+	dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+	dcat:contactPoint iig-meta:IICONGRAPHcontactpoint ;
+	dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+	dct:temporal "no liminations" ;
+	dct:spatial "global" .
+
+iig-meta:IICONGRAPHarco
+	a dcatapit:Dataset , dcat:Dataset ;
+	dct:identifier <https://doi.org/10.5281/zenodo.10294589> ;
+	dct:title "IICONGRAPHglobal"@en ;
+	dct:description "Dataset containing the re-engineering of ArCo's iconographical and iconological statements following the structure of the ICON ontology and enriched by an alignment to HyperReal"@en ;
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+	dct:subject <http://eurovoc.europa.eu/100225> , <http://eurovoc.europa.eu/100223> , <http://eurovoc.europa.eu/4096>, <http://eurovoc.europa.eu/2278>; #humanities #informationtechnologyanddataprocessing #visualart
+	dct:issued "2023-12-5"^^xsd:date ;
+	dct:modified "2023-12-8"^^xsd:date ;
+	dcat:keyword "art", "semantic web", "cultural heritage", "knowledge graph";
+	owl:versionInfo "1.0" ; 
+	dct:rightsHolder orcid:0000-0002-9152-4402;
+	dct:publisher orcid:0000-0002-9152-4402 ;
+	dct:creator orcid:0000-0002-9152-4402 ;
+	dct:license <http://creativecommons.org/licenses/by/4.0> ;
+	prov:wasDerivedFrom <> ;
+    prov:wasDerivedFrom <> ;
+	dcat:distribution iig-meta:IICONGRAPHarcoTTLdistribution ;
+	dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+	dcat:contactPoint iig-meta:IICONGRAPHcontactpoint ;
+	dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+	dct:temporal "no limitations" ;
+	dct:spatial "global" .
+	
+#Distribution
+
+iig-meta:IICONGRAPHglobalTTLdistribution
+	a dcatapit:Distribution , dcat:Distribution ;
+	dct:title "Turtle distribution of the IICONGRAPHglobal dataset."@en ;
+	dct:description "Turtle distribution of the IICONGRAPHglobal dataset through Zenodo."@en ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+	dct:license <http://creativecommons.org/licenses/by/4.0> ;
+	dcat:downloadURL <https://zenodo.org/records/10294589/files/iicongraphglobal.ttl?download=1> ;
+	dcat:accessURL <https://zenodo.org/records/10294589> .
+
+iig-meta:IICONGRAPHwikidataTTLdistribution
+	a dcatapit:Distribution , dcat:Distribution ;
+	dct:title "Turtle distribution of the IICONGRAPHwikidata dataset."@en ;
+	dct:description "Turtle distribution of the IICONGRAPHwikidata dataset through Zenodo."@en ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+	dct:license <http://creativecommons.org/licenses/by/4.0> ;
+	dcat:downloadURL <https://zenodo.org/records/10294589/files/iicongraphwikidata.ttl?download=1> ;
+	dcat:accessURL <https://zenodo.org/records/10294589> .
+
+iig-meta:IICONGRAPHarcoTTLdistribution
+	a dcatapit:Distribution , dcat:Distribution ;
+	dct:title "Turtle distribution of the IICONGRAPHarco dataset."@en ;
+	dct:description "Turtle distribution of the IICONGRAPHarco dataset through Zenodo."@en ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+	dct:license <http://creativecommons.org/licenses/by/4.0> ;
+	dcat:downloadURL <https://zenodo.org/records/10294589/files/iicongraph-arco.ttl?download=1> ;
+	dcat:accessURL <https://zenodo.org/records/10294589> .
+
+#Admin
+
+orcid:0000-0002-9152-4402
+	a dcatapit:Agent , foaf:Agent ;
+	dct:identifier <orcid:0000-0002-9152-4402> ;
+	foaf:name "Bruno Sartini" .
+
+#ContactPoint
+
+iig-meta:IICONGRAPHcontactpoint
+	a dcatapit:Agent ;
+	vcard:hasEmail <mailto:b.sartini@lmu.de> .
+
+#Original datasets
+
+<http://wit.istc.cnr.it/arco/>
+	a dcatapit:Dataset , dcat:Dataset ;
+	dct:rightsHolder <https://www.beniculturali.it/> . 
+
+<https://www.wikidata.org/>
+	a dcatapit:Dataset , dcat:Dataset ;
+	dct:rightsHolder <https://wikimediafoundation.org/> . 
+
+<https://w3id.org/simulation/data>
+	a dcatapit:Dataset , dcat:Dataset ;
+	dct:rightsHolder orcid:0000-0002-9152-4402 . 
