@@ -5,7 +5,7 @@ In this repository, we describe the steps to answer the research questions used 
 
 **Research Question**: To what extent can linked open data be leveraged to expose serendipitous symbolic connections in Wikidata?
 
-The steps to answer this question are explained in [RQ1_1.ipynb]().
+The steps to answer this question are explained in [RQ1_1.ipynb](RQ1_1.ipynb).
 
 ### RQ1.2 - Wikidata
 
@@ -24,7 +24,7 @@ SELECT DISTINCT ?painting ?paintinglabel (count(distinct ?simulation) as ?tot) W
     ?simulation sim:hasSimulacrum ?anything . } GROUP BY ?painting ?paintinglabel ORDER BY DESC(?tot) LIMIT 100
 ```
 
-The results of this query are available in the [rq1_2.csv]() file.
+The results of this query are available in the [rq1_2.csv](rq1_2.csv) file.
 
 ***
 
@@ -53,6 +53,7 @@ SELECT (COUNT(?ico) as ?tot)
 WHERE { {?artwork icon:iconographicallyDepicts ?ico .   }
     MINUS {?ico sim:hasSimulacrum ?something} }
 ```
+The result is 121,893.
 
 ***
 
@@ -100,12 +101,7 @@ WHERE {
 GROUP BY ?icomeaning ORDER BY DESC(?tot) LIMIT 100
 ```
 
-The results of this query are available in the [rq3_1.csv]() file.
+The results of this query are available in the [rq3_1.csv](rq3_1.csv) file.
 
 
 ***
-
-## References
-
-* <a id="1">[1]</a>Baroncini, S., Sartini, B., Van Erp, M., Tomasi, F. and Gangemi, A. (2023), "Is dc:subject enough? A landscape on iconography and iconology statements of knowledge graphs in the semantic web", Journal of Documentation, Vol. 79 No. 7, pp. 115-136. https://doi.org/10.1108/JD-09-2022-0207
-* <a id="2">[2]</a>Farber, M., Bartscherer, F., Menne, C. and Rettinger, A. (2018), “Linked data quality of dbpedia, freebase, opencyc, wikidata, and yago”, Semantic Web, Vol. 9 No. 1, pp. 77-129.
