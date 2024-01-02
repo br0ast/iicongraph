@@ -62,3 +62,10 @@ WHERE { ?artwork icon:preiconographicallyDepicts|
                  icon:iconologicallyRepresents ?sub 
       } 
 ```
+
+***
+
+## References
+
+* <a id="1">[1]</a>Baroncini, S., Sartini, B., Van Erp, M., Tomasi, F. and Gangemi, A. (2023), "Is dc:subject enough? A landscape on iconography and iconology statements of knowledge graphs in the semantic web", Journal of Documentation, Vol. 79 No. 7, pp. 115-136. https://doi.org/10.1108/JD-09-2022-0207
+* <a id="2">[2]</a>Farber, M., Bartscherer, F., Menne, C. and Rettinger, A. (2018), “Linked data quality of dbpedia, freebase, opencyc, wikidata, and yago”, Semantic Web, Vol. 9 No. 1, pp. 77-129.
