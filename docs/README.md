@@ -104,11 +104,11 @@ The description is in Italian, and, as seen in the scripts, an automatic transla
 
 ### Wikidata
 
-For the data conversion of Wikidata, please refer to the jupyter notebook [ICONGRAPHwikidatadocs.ipynb](ICONGRAPHwikidatadocs.ipynb)
+For the data conversion of Wikidata, please refer to the jupyter notebook [IICONGRAPHwikidatadocs.ipynb](ICONGRAPHwikidatadocs.ipynb)
 
 ### ArCo
 
-For the data conversion of ArCo, please refer to the jupyter notebook [ICONGRAPHarcodocs.ipynb](ICONGRAPHarcodocs.ipynb)
+For the data conversion of ArCo, please refer to the jupyter notebook [IICONGRAPHarcodocs.ipynb](ICONGRAPHarcodocs.ipynb)
 
 ### Combining the data
 
