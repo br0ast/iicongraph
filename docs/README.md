@@ -148,7 +148,7 @@ The table below contains quantitative data about the content of IICONGRAPHglobal
 
 ## Catalogue Data
 
-The catalogue data of IICONGRAPH1.0 is released in the turtle serialization, following the [DCAT model](https://www.w3.org/TR/vocab-dcat-3/) it is available [in this github repository]()
+The catalogue data of IICONGRAPH1.0 is released in the turtle serialization, following the [DCAT model](https://www.w3.org/TR/vocab-dcat-3/) it is available [here](https://github.com/br0ast/iicongraph/blob/main/data/IICONGRAPH_catalogue.ttl)
 
 ## References
 
